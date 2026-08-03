@@ -1,0 +1,31 @@
+# Build artifacts
+target/
+build/
+.gradle/
+*.class
+*.jar
+
+# IDEs
+.idea/
+*.iml
+.vscode/
+.classpath
+.project
+.settings/
+nbproject/
+nb-configuration.xml
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+logs/
+
+# Native compilation (Quarkus native)
+*.exe
+*.so
