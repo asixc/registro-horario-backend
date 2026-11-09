@@ -1,0 +1,19 @@
+name: workmeter
+services:
+  postgres:
+    image: postgres:18
+    environment:
+      POSTGRES_DB: workmeter
+      POSTGRES_USER: workmeter
+      POSTGRES_PASSWORD: ${WORKMETER_DB_PASSWORD:?Define WORKMETER_DB_PASSWORD}
+    ports:
+      - "127.0.0.1:54328:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U workmeter -d workmeter"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+volumes:
+  postgres-data:

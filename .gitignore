@@ -29,3 +29,9 @@ logs/
 # Native compilation (Quarkus native)
 *.exe
 *.so
+
+# Local credentials and import reports
+.env
+.env.*
+!.env.example
+*-import-report.json

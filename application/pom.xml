@@ -1,0 +1,5 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"><modelVersion>4.0.0</modelVersion>
+  <parent><groupId>com.workmeter</groupId><artifactId>workmeter</artifactId><version>0.1.0-SNAPSHOT</version></parent>
+  <artifactId>application</artifactId>
+  <dependencies><dependency><groupId>com.workmeter</groupId><artifactId>domain</artifactId><version>${project.version}</version></dependency></dependencies>
+</project>
